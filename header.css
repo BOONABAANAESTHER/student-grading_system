@@ -1,0 +1,115 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #2a2185; /* Dark Blue */
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    height: 50px;
+}
+
+.header-text {
+    flex: 1; /* Allows the text to expand */
+    text-align: center;
+}
+
+.header-text h1 {
+    font-size: 1.5rem;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile .signout {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    background: #e63946; /* Red for signout */
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.profile .signout:hover {
+    background: #d62839;
+}
+
+/* Responsive Design */
+
+/* For screens smaller than 768px (tablets and phones) */
+@media (max-width: 768px) {
+    header.header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .logo img {
+        height: 40px;
+    }
+
+    .header-text h1 {
+        font-size: 1.2rem;
+    }
+
+    .profile {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .profile .signout {
+        font-size: 0.8rem;
+        padding: 4px 8px;
+    }
+}
+
+/* For screens smaller than 480px (small phones) */
+@media (max-width: 480px) {
+    header.header {
+        padding: 10px;
+    }
+
+    .logo img {
+        height: 35px;
+    }
+
+    .header-text h1 {
+        font-size: 1rem;
+    }
+
+    .profile img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .profile .signout {
+        font-size: 0.75rem;
+        padding: 3px 6px;
+    }
+}

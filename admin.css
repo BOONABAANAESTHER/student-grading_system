@@ -1,0 +1,51 @@
+body::before {
+    content: ''; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../imgs/kings.svg'); 
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px); 
+    opacity: 0.5; 
+    z-index: -1; 
+    border-radius: inherit; 
+}
+
+.dashboard-container header {
+    border-radius: 8px;
+}
+
+.card {
+    border-radius: 8px;
+}
+
+.card-header {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+button.btn-danger {
+    transition: background-color 0.3s;
+}
+
+button.btn-danger:hover {
+    background-color: #c82333;
+}
+#form{
+    background-color: #2a2185;
+}
+#manage{
+    background-color: #2a2185;
+}
+#btn{
+    background-color: #2a2185;
+    color: white;
+    border-radius: 20px;
+}
